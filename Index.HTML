@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Desafio AirBnB</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72"></script>
+        <script src="listLocacao.js"></script>
+        <link rel="stylesheet" href="estilo.CSS">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><h1>Desafio AirBnB</h1></a>
+                </div>
+                <div id="div-row-search" class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="form-search" onsubmit="event.preventDefault()" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-2">
+                                        <label for="location-search">Destino</label>
+                                        <input type="text" class="form-control" id="location-search" placeholder="Para onde você vai?" required>
+                                        <div class="invalid-feedback">
+                                            Selecione uma localização
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="checkin">Check-in</label>
+                                        <input type="date" class="form-control" id="checkin" required>
+                                        <div class="invalid-feedback date-fields">
+                                            Selecione uma data de checkin
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-2">
+                                        <label for="checkout">Checkout</label>
+                                        <input type="date" class="form-control" id="checkout" required>
+                                        <div class="invalid-feedback date-fields">
+                                            Selecione uma data de checkout
+                                        </div>
+                                    </div>
+                                    <div class="col div-btn-search">
+                                        <button type="submit" onclick="handleClickSearch()" class="btn btn-outline-success"><i
+                                                class="fas fa-search"></i>
+                                            Buscar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+        <div id="Titulo"><h1>Estadias  em Passo de Torres</h1></div>               
+        <div class="container-fluid">           
+            <div class="row">
+                <div class="col-sm-7">                                         
+                    <div id="cards"></div>
+                    <script src="./Index.js"></script>
+                </div>
+                <div class="col-sm-5">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d55677.93372709065!2d-49.73231015457008!3d-29.2861202220022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1588950087450!5m2!1spt-BR!2sbr" 
+                        width="440" height="1120" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        
+                    </div>
+                </div>                      
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div id="rodape">
+            <h5>Direitos autorais de Carolina Reis, sua utilização possui fins unicamente acadêmicos</h5>
+                
+                </div>
+            
+            </footer>
+    </html>
